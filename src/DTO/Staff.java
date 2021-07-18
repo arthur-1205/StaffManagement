@@ -97,16 +97,9 @@ public class Staff implements Comparable<Staff>{
         return nameManager;
     }
     
- 
-
     public void outputStaff() {
         System.out.printf("|STAFF   |ID: %4d|NAME: %15s|GENDER: %7s|BASIC SALARY: %12d|  MANAGER ID: %4s|  MANAGER NAME: %10s|\n", 
-                            id, name, gender, basicSalary, getIdManager(), getNameManager());
-    }
-    
-    public void ouputStaffWTask() {
-        System.out.printf("|STAFF   |ID: %4d|NAME: %15s|MANAGER ID: %4s|MANAGER NAME: %10s| <<<<= ", 
-                            id, name, getIdManager(), getNameManager());
+                            id, name.toUpperCase(), gender.toUpperCase(), basicSalary, getIdManager(), getNameManager());
     }
 
     @Override

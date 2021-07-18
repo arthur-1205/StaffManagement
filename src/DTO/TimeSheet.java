@@ -58,7 +58,7 @@ public class TimeSheet {
     public void output() {
         if(staff != null && task != null){
             System.out.printf("|STAFF ID:  %4d|STAFF NAME: %15s|TASK ID: %4d|TASK TITLE: %10s|WORKHOUR: %5d|\n",
-                                    staff.getId(), staff.getName(), task.getId(), task.getTitle(), task.getTotalHour());
+                                    staff.getId(), staff.getName().toUpperCase(), task.getId(), task.getTitle().toUpperCase(), task.getTotalHour());
         }
     }
    

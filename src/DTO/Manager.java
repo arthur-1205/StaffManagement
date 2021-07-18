@@ -35,6 +35,6 @@ public class Manager extends Staff{
 
     public void outputManager() {
         System.out.printf("|MANAGER |ID: %4d|NAME: %10s|GENDER: %6s|BASIC SALARY: %12d|BONUS: %12d|\n", 
-                                id, name ,gender, basicSalary, bonusSalary);
+                                id, name.toUpperCase() ,gender.toUpperCase(), basicSalary, bonusSalary);
     }
 }

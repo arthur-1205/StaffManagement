@@ -102,7 +102,7 @@ public class StaffList {
     public void checkStaffWManager(int managerId) {
         for (int i = 0; i < staffList.size(); i++) {
             if (staffList.get(i).getManager() != null) {
-                if (staffList.get(i).getId() == managerId) {
+                if (staffList.get(i).getManager().getId() == managerId) {
                     staffList.get(i).setManager(null);
                 }
             }

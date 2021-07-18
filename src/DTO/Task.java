@@ -68,12 +68,12 @@ public class Task implements Comparable<Task>{
     
     public void outputTask() {
         System.out.printf("|TASK  |ID: %4d|TITLE: %10s|BEGIN DATE: %13s|END DATE: %13s|TOTAL HOUR: %8d|\n",
-                                    id, title, beginDate, endDate, totalHour);
+                                    id, title.toUpperCase(), beginDate, endDate, totalHour);
     }
     
     public void outputTaskWStaff() {
          System.out.printf("|TASK  |ID: %4d|TITLE: %10s|BEGIN DATE: %13s|END DATE: %13s|TOTAL HOUR: %8d|\n",
-                                    id, title, beginDate, endDate, totalHour);
+                                    id, title.toUpperCase(), beginDate, endDate, totalHour);
     }
 
     @Override
